@@ -6,7 +6,7 @@ const forecastservice = require('./service/forecast');
 const app = express();
 const port = process.env.PORT;
 
-var whitelist = ['http://localhost', 'localhost']
+var whitelist = ['http://localhost', 'localhost', 'forecast-test-demo.herokuapp', 'forecast-test-demo', 'https://forecast-test-demo.herokuapp.com']
 var corsOptions = function (req, callback) {
     var corsOptions;
     console.log(req.hostname);
